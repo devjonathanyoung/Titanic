@@ -12,6 +12,8 @@ fd.format_titanic_data(titanic_test, titanic_training_data)
 # learner = Learner(titanic_training_data)
 # prediction = learner.predict(titanic_test)
 predictors = ["Pclass", "Sex", "Age", "SibSp", "Parch", "Fare", "Embarked"]
-alg = RandomForestClassifier(random_state=1, n_estimators=10, min_samples_split=2, min_samples_leaf=1)
+# Increase n_estimators for the number of trees
+# Increase min_samples_split and min_samples_leaf to reduce overfitting and improve on unknown data
+alg = RandomForestClassifier(random_state=1, n_estimators=150, min_samples_split=4, min_samples_leaf=2)
 
 # prediction.to_csv("kaggle.csv", index=False)
