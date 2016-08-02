@@ -1,10 +1,10 @@
 import pandas
-import formatting.format_data as fd
 from learning.gradient_boosting import LearnerGradientBoosting
 
+import Titanic.formatting.format_data as fd
 
-titanic_training_data = pandas.read_csv("./data/train.csv")
-titanic_test = pandas.read_csv("./data/test.csv")
+titanic_training_data = pandas.read_csv("./Titanic/data/train.csv")
+titanic_test = pandas.read_csv("./Titanic/data/test.csv")
 
 fd.format_titanic_data(titanic_training_data, titanic_training_data)
 fd.format_titanic_data(titanic_test, titanic_training_data)

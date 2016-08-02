@@ -1,10 +1,11 @@
-import formatting.helpers.family_ids as fam_id
-import formatting.helpers.family_name as fam_name
-import formatting.helpers.embarked as embarked
-import formatting.helpers.fare as fare
-import formatting.helpers.family_size as fam_size
 import formatting.helpers.age as age
+import formatting.helpers.embarked as embarked
+import formatting.helpers.family_name as fam_name
+import formatting.helpers.family_size as fam_size
+import formatting.helpers.fare as fare
 import formatting.helpers.sex as sex
+
+import Titanic.formatting.helpers.family_ids as fam_id
 
 
 def format_titanic_data(data, train_data):
